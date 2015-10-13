@@ -21,7 +21,7 @@ FileTransferPlugin.prototype.apply = function(compiler) {
                 return fs.statSync(path.resolve(basePath, _this.pattern.src)).size;
             },
             source: function() {
-                return fs.readFileSync(from);
+                return fs.readFileSync(_this.pattern.src);
             },
         };
 
