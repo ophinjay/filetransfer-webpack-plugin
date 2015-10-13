@@ -1,46 +1,46 @@
-## Transfer Webpack Plugin
+## File Transfer Webpack Plugin
 
-Transfer files to the build directory
+Transfer single file to the build directory
 
 ### Getting started
 
 Install the plugin:
 
 ```
-npm install --save-dev transfer-webpack-plugin
+npm install --save-dev filetransfer-webpack-plugin
 ```
 
 
 ### API
 ```javascript
-new TransferWebpackPlugin(patterns: array, [basePath: string])
+new FileTransferPlugin(pattern: object, [basePath: string])
 ```
 
-* `patterns` – array of patterns `{ from: 'path', to: 'path' }`, `from` – relative to `basePath` or to `context` of your config (if `basePath` is not exists), 
-`to` – relative to the build directory
-* `basePath` (optional) – directory to be resolved to `from` parameter
+* `pattern` – `{ src: 'path', dest: 'abs_path_of_dest_file' }`, `src` – relative to `basePath` or to `context` of your config (if `basePath` is not exists), 
+`dest` – absolute path
+* `basePath` (optional) – directory to be resolved to `src` parameter
 
 ### Usage
 
 ```javascript
-var TransferWebpackPlugin = require('transfer-webpack-plugin');
+var FileTransferPlugin = require('filetransfer-webpack-plugin');
 
 module.exports = {
     context: path.join(__dirname, 'app'),
     plugins: [
-        new TransferWebpackPlugin([
-            { from: 'i18n', to: 'i18n' },
-            { from: 'root' }
-        ])
+        new FileTransferPlugin({ 
+            src: 'cred_dev.js', 
+            dest: path.join(__dirname, 'cred.js') 
+        })
     ]
 };
 
 module.exports = {
     plugins: [
-        new TransferWebpackPlugin([
-            { from: 'i18n', to: 'i18n' },
-            { from: 'root' }
-        ], path.join(__dirname, 'app'))
+        new FileTransferPlugin({ 
+            src: 'cred_dev.js', 
+            dest: path.join(somePath, 'cred.js') 
+        }, path.join(__dirname, 'app'))
     ]
 };
 ```
