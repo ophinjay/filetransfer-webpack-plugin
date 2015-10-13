@@ -9,7 +9,6 @@ function FileTransferPlugin(pattern, basePath) {
 FileTransferPlugin.prototype.apply = function(compiler) {
     var _this = this;
     var basePath = this.basePath || compiler.options.context || null;
-    console.log(basePath);
     compiler.plugin('emit', function(compilation, cb) {
         if (!basePath) {
             compilation.errors.push(new Error('FileTransferPlugin: no basePath provided'));
@@ -21,7 +20,6 @@ FileTransferPlugin.prototype.apply = function(compiler) {
             if (err) {
                 return console.error(err)
             }
-            console.log("success!")
         });
     });
 };
