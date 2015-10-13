@@ -1,8 +1,8 @@
 var path = require('path');
 var fs = require('fs');
 
-function FileTransferPlugin(patterns, basePath) {
-    this.patterns = patterns || [];
+function FileTransferPlugin(pattern, basePath) {
+    this.pattern = pattern || [];
     this.basePath = basePath;
 }
 
@@ -16,9 +16,9 @@ FileTransferPlugin.prototype.apply = function(compiler) {
             cb();
         }
 
-        compilation.assets[pattern.dest] = {
+        compilation.assets[_this.pattern.dest] = {
             size: function() {
-                return fs.statSync(path.resolve(basePath, pattern.src)).size;
+                return fs.statSync(path.resolve(basePath, _this.pattern.src)).size;
             },
             source: function() {
                 return fs.readFileSync(from);
