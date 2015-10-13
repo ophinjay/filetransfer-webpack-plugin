@@ -1,7 +1,7 @@
 {
-  "name": "transfer-webpack-plugin",
-  "version": "0.1.4",
-  "description": "transfer files to the build directory",
+  "name": "filetransfer-webpack-plugin",
+  "version": "0.0.1",
+  "description": "transfer a file to the build directory",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -14,11 +14,10 @@
     "move",
     "copy"
   ],
-  "author": "Dmitry Kokorev",
+  "author": "Jophin Joseph",
   "license": "MIT",
   "homepage": "https://github.com/molforp/transfer-webpack-plugin",
   "dependencies": {
-    "node-dir": "^0.1.6",
-    "vow": "^0.4.9"
+    "node-dir": "^0.1.6"
   }
 }
