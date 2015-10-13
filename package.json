@@ -16,8 +16,5 @@
   ],
   "author": "Jophin Joseph",
   "license": "MIT",
-  "homepage": "https://github.com/ophinjay/filetransfer-webpack-plugin.git",
-  "dependencies": {
-    "node-dir": "^0.1.6"
-  }
+  "homepage": "https://github.com/ophinjay/filetransfer-webpack-plugin.git"
 }
