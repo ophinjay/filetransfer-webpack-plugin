@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/molforp/transfer-webpack-plugin.git"
+    "url": "https://github.com/ophinjay/filetransfer-webpack-plugin.git"
   },
   "keywords": [
     "webpack",
@@ -16,7 +16,7 @@
   ],
   "author": "Jophin Joseph",
   "license": "MIT",
-  "homepage": "https://github.com/molforp/transfer-webpack-plugin",
+  "homepage": "https://github.com/ophinjay/filetransfer-webpack-plugin.git",
   "dependencies": {
     "node-dir": "^0.1.6"
   }
