@@ -14,6 +14,7 @@
     "move",
     "copy"
   ],
+  "readmeFilename": "README.md",
   "author": "Jophin Joseph",
   "license": "MIT",
   "homepage": "https://github.com/ophinjay/filetransfer-webpack-plugin.git",
