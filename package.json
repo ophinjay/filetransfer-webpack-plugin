@@ -1,23 +1,23 @@
 {
-    "name": "filetransfer-webpack-plugin",
-    "version": "0.0.1",
-    "description": "transfer a file to the build directory",
-    "main": "index.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ophinjay/filetransfer-webpack-plugin.git"
-    },
-    "keywords": [
-        "webpack",
-        "plugin",
-        "transfer",
-        "move",
-        "copy"
-    ],
-    "author": "Jophin Joseph",
-    "license": "MIT",
-    "homepage": "https://github.com/ophinjay/filetransfer-webpack-plugin.git",
-    "dependencies": {
-        "fs-extra": "0.24.0"
-    }
+  "name": "filetransfer-webpack-plugin",
+  "version": "0.0.2",
+  "description": "transfer a file to the build directory",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ophinjay/filetransfer-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "transfer",
+    "move",
+    "copy"
+  ],
+  "author": "Jophin Joseph",
+  "license": "MIT",
+  "homepage": "https://github.com/ophinjay/filetransfer-webpack-plugin.git",
+  "dependencies": {
+    "fs-extra": "0.24.0"
+  }
 }
